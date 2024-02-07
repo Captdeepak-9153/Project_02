@@ -16,6 +16,11 @@ const urlSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "users",
     },
+    Username: {
+      type: String,
+      ref: "User", // Reference the User model
+    },
+    
   },
   { timestamps: true }
 );

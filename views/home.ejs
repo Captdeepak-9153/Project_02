@@ -13,8 +13,9 @@
   </head>
   <body>
     <h1>URL Shortener</h1>
-    <% if (locals.name) { %>
-      <h1>hey <%= name.name1 %></h1>
+    
+    <% if (locals.users) { %>
+      <h1>hey <%= user.name %></h1>
       <% } %>
     <% if (locals.id) { %>
     <p>URL Generated: http://localhost:3000/url/<%= id %></p>

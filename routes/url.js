@@ -1,9 +1,10 @@
 const express = require("express");
-const { handleUserSignup, handleUserLogin } = require("../controllers/user");
+
+const { handleGenerateNewShortURL,handleGetAnalytics } = require("../controllers/url");
 
 const router = express.Router();
 
-router.post("/", handleUserSignup);
-router.post("/login", handleUserLogin);
+router.post("/", handleGenerateNewShortURL);
+router.get("/analytics/:shortId",handleGetAnalytics);
 
 module.exports = router;  
