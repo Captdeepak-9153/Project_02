@@ -12,7 +12,6 @@ router.get("/", async (req, res) => {
       name:username,
     });
   });
-
   router.get("/signup", (req, res) => {
     return res.render("signup");
   });
